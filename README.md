@@ -1,6 +1,11 @@
 # BossTransitionAnim
 仿写Boss直聘的转场动画
 
+**先上效果图**
+
+![仿Boss直聘的专场动画.gif](https://ooo.0o0.ooo/2016/03/29/56fb49dc34a33.gif)
+
+
 在iOS7之后，开发者可以自定制转场动画，但是本人在开发过程中一直要兼容iOS6，因此也没能在项目中使用到这些新特性，本文旨在学习，参考资料在文末给出。以下下指示谈谈仿写中的一些思路和误区。
 
 ### 思路一
@@ -19,8 +24,13 @@
  
  做第一种`pop`动画时，一开始以为是按照滑动距离来进行类似于进行手势百分比返回的转场动画，但是当我进行实际编码是发现如果是按百分比进行动画，无论我怎么写都会出现 BUG 并且达不到我想要的效果，因此在深(shui)思(jiao)后，还是采用了如 `push`动画一样的截图来实现(如果你能实现百分比返回，请收下我的膝盖并告诉我🙃)
  
+**源码中的一处注释的示意图**
+
+![注释的示意图.png](https://ooo.0o0.ooo/2016/03/29/56fb4adcee4ee.jpeg)
+ 
  
 ### 参考链接
 1. [OneV's Den 博客 - iOS7中的ViewController切换 OneV's Den](https://onevcat.com/2013/10/vc-transition-in-ios7/)
 2. [ColinEberhardt的VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)
 3. [Kitten's 时间胶囊 - 实现Keynote中的神奇移动效果](http://kittenyang.com/magicmove/)
+
